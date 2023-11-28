@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+.navbar {
+    padding: 10px;
+}
+.quiz {
+    padding: 20px;
+}
+.img-model5 {
+    width: 100%;
+}
+h2 {
+    font-size: 1.5rem; 
+}
+p {
+    font-size: 0.9rem; 
+}
+}
