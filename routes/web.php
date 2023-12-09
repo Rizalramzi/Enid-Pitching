@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\QuestionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,11 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::view('/','index');
 Route::view('/about','about');
 Route::view('/elearning','elearning')->name('elearning');
 Route::view('/bootcamp','bootcamp')->name('bootcamp');
 Route::view('/quiz','quiz')->name('quiz');
+
+
+Route::post('/ror', [QuestionController::class, 'store']
+)->name('question.store');
 
 // Inside E-Learning
 Route::get('/elearning/web-development', function () {
@@ -45,6 +51,12 @@ Route::get('/elearning/digital-marketing', function () {
     return view('inside-elearning/digital_marketing');
 })->middleware(['auth', 'verified']);
 // End Inside E-Learning
+
+// Inside Inside E-Learning
+Route::get('/elearning/web-development/material', function () {
+    return view('inside-elearning/inside-web-dev');
+})->middleware(['auth', 'verified']);
+// End Inside Inside E-Learning
 
 Route::get('/dashboard', function () {
     return view('index');

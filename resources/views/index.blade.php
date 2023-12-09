@@ -178,32 +178,42 @@
 
     {{-- Questions --}}
     <div class="question">
-      <div class="container" style="background-color: #045B53; border-radius:10px">
+      <div class="container" style="background-color: #045B53; border-radius:10px" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="500">
         <div class="row">
           <div class="col-md-12 mt-5 mb-5">
-            <h2 style="color: white;" class="text-center"><b>Any Question?</b></h2>
+            <h2 style="color: white;" class="text-center" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="500"><b>Any Question?</b></h2>
             <div class="mt-5">
-            <form action="" style="max-width: 40%" class="mx-auto">
+            <form method="post" style="max-width: 40%" class="mx-auto" action="{{route('question.store')}}">
+              @csrf
               <div class="form-group">
-                <label for="newsletter1" class="text-white">Name</label>
-                <input type="text" class="form-control" id="newsletter1" placeholder="Name" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off">
+                <label for="newsletter1" class="text-white" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500">Name</label>
+                <input type="text" class="form-control"  placeholder="Name" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off" name="name" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500">
               </div>
               <div class="form-group mt-4">
-                <label for="newsletter1" class="text-white">Question</label>
-                <input type="text" class="form-control" id="newsletter1" placeholder="Question" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off">
+                <label for="newsletter1" class="text-white" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500">Question</label>
+                <textarea cols="30" rows="10" class="form-control"  placeholder="Question" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off" name="question" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500"></textarea>
               </div>
               <div class="form-group mt-4">
-                <label for="newsletter1" class="text-white">Email address</label>
-                <input type="email" class="form-control" id="newsletter1" placeholder="Email Address" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off">
+                <label for="newsletter1" class="text-white" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500">Email address</label>
+                <input type="email" class="form-control"  placeholder="Email Address" style="box-shadow: none; border-color:#045B53; height:65px" autocomplete="off" name="email" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="500">
               </div>
-              <button class="btn btn-custom-2 mt-4" type="submit">Send</button>
+              <button class="btn btn-custom-2 mt-4" type="submit" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="500">Send</button>
             </form>
           </div>
           </div>
         </div>
       </div>
     </div>
-    
+
     {{-- End Questions --}}
     
     <!-- footer -->

@@ -85,12 +85,22 @@
                 data-aos-anchor-placement="top-bottom" data-aos-duration="500"><b>Join Class Learnifie and Forge a Promising Career Path.</b></h2>
                 <p class="mt-3"data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-duration="700">Learnifie is passionately dedicated to empowering individuals to unleash their full potential through targeted and practical bootcamp experiences.</p>
-                <a href="#material" class="btn btn-custom mt-3"data-aos="fade-up"
+                <a href="#comingsoon" class="btn btn-custom mt-3"data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom" data-aos-duration="900">Find Classes</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Bootcamp -->
+
+    {{--  --}}
+    <div class="container" id="comingsoon" style="margin-top:30%">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-muted text-center">Coming Soon!</h3>
+        </div>
+      </div>
+    </div>
+    {{--  --}}
 </body>
 </html>

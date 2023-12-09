@@ -92,5 +92,15 @@
         </div>
     </div>
     <!-- End Hero -->
+
+    {{--  --}}
+    <div class="container" id="comingsoon" style="margin-top:30%">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-muted text-center">Coming Soon!</h3>
+        </div>
+      </div>
+    </div>
+    {{--  --}}
 </body>
 </html>

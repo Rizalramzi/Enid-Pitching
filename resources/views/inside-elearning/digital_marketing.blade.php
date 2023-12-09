@@ -46,6 +46,9 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="border: none">
                     <li>
+                      <a href="/profile" class="btn btn-custom mb-2">Profile</a>
+                    </li>
+                    <li>
                       <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit" class="btn btn-custom">Logout</button>

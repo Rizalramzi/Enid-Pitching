@@ -44,7 +44,7 @@
               return;
           }
 
-          appendMessage("Ramzi", message, "user-message");
+          appendMessage("{{ Auth::user()->name }}", message, "user-message");
           await sleep(500);
           typeMessage(generateResponse(message), "chatbox", "chatbot-message");
           userInput.value = "";
@@ -213,7 +213,7 @@
 <div class="chatbot-container" id="chatbot-section">
   <div class="container mt-3">
     <div class="alert alert-success" role="alert">
-    Anda perlu <a href="{{ route('login') }}" class="btn btn-custom">login</a> terlebih dahulu untuk menggunakan chatbot.
+    Anda perlu <a href="{{ route('login') }}">login</a> terlebih dahulu untuk menggunakan chatbot.
     </div>
   </div>
 </div>

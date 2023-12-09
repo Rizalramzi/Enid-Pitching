@@ -46,6 +46,9 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="border: none">
                     <li>
+                      <a href="/profile" class="btn btn-custom mb-2">Profile</a>
+                    </li>
+                    <li>
                       <form method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit" class="btn btn-custom">Logout</button>
@@ -96,10 +99,10 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-md-3">
-            <a href="inside-web-dev.html"><img src="/assets/learn.png" alt="" width="200" class="img-web"></a>
+            <a href="/elearning/web-development/material"><img src="/assets/learn.png" alt="" width="200" class="img-web"></a>
           </div>
           <div class="col-md-3">
-            <a href=""><img src="../assets/learn.png" alt="" width="200" class="img-web"></a>
+            <a href="/elearning/web-development/material"><img src="../assets/learn.png" alt="" width="200" class="img-web"></a>
           </div>
           <div class="col-md-3">
             <a href=""><img src="../assets/learn.png" alt="" width="200" class="img-web"></a>
